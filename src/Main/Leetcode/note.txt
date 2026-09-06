@@ -1,0 +1,80 @@
+# LeetCode Problems
+
+This section contains my solutions to **LeetCode problems using Java**.
+
+The problems are organized to help me practice different data structures, algorithms, and problem-solving patterns.
+
+---
+
+## 📂 Organization
+
+Problems are organized by:
+
+* Topic
+* Difficulty
+* Problem-solving pattern
+
+Example:
+
+```text
+LeetCode/
+│
+├── Arrays/
+├── Strings/
+├── HashMap/
+├── Two-Pointers/
+├── Sliding-Window/
+├── Binary-Search/
+├── Linked-List/
+├── Stack/
+├── Queue/
+├── Trees/
+├── Heap/
+├── Graphs/
+├── Backtracking/
+├── Greedy/
+└── Dynamic-Programming/
+```
+
+---
+
+## 📝 Problem Format
+
+For each problem, I try to document:
+
+```text
+Problem:
+Difficulty:
+Pattern:
+Approach:
+Time Complexity:
+Space Complexity:
+Mistake:
+Key Lesson:
+```
+
+The code contains the final Java solution.
+
+---
+
+## 🎯 Goal
+
+The goal is not simply to increase the number of solved problems.
+
+The main objective is to improve:
+
+* Problem understanding
+* Pattern recognition
+* Algorithm selection
+* Coding ability
+* Complexity analysis
+* Edge-case handling
+* Interview problem solving
+
+---
+
+## 🔄 Revision Strategy
+
+Problems that I struggle with or solve incorrectly will be added to my revision list.
+
+The aim is to eventually solve previously difficult problems without looking at the solution.

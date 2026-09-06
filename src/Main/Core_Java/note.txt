@@ -1,0 +1,111 @@
+# Core Java for DSA
+
+This section contains the **Java fundamentals and built-in data structures** that are commonly used when solving DSA problems.
+
+The purpose of this section is to become comfortable with Java syntax, APIs, and collections before applying them to algorithmic problems.
+
+---
+
+## 📚 Topics
+
+### Arrays
+
+* Declaration and initialization
+* Traversing arrays
+* Searching
+* Sorting
+* Two-dimensional arrays
+* Common array operations
+
+### Strings
+
+* String operations
+* Character access
+* String comparison
+* StringBuilder
+* String manipulation
+
+### ArrayList
+
+* Creating ArrayLists
+* Adding elements
+* Removing elements
+* Accessing elements
+* Searching
+* Iterating
+
+### LinkedList
+
+* Creating LinkedLists
+* Adding and removing elements
+* Traversal
+* Understanding nodes
+
+### HashMap
+
+* Key-value pairs
+* Adding and retrieving values
+* Checking keys
+* Frequency counting
+* HashMap-based problem solving
+
+### HashSet
+
+* Storing unique elements
+* Checking existence
+* Removing elements
+* Duplicate detection
+
+### Stack / Deque
+
+* Push
+* Pop
+* Peek
+* Understanding LIFO
+* Using `Deque` for stack problems
+
+### Queue
+
+* Add
+* Remove
+* Peek
+* Understanding FIFO
+
+### PriorityQueue
+
+* Min Heap
+* Max Heap
+* Custom comparators
+* Heap-based problems
+
+### Comparator
+
+* Custom sorting
+* Sorting objects
+* Lambda expressions
+
+### Collections
+
+Important methods from Java's `Collections` utility class.
+
+---
+
+## 🎯 Goal
+
+The goal is to make Java syntax and commonly used data structures **second nature**, so that during problem solving I can focus on the algorithm instead of struggling with Java syntax.
+
+---
+
+## 📌 Learning Format
+
+For each topic, I try to maintain:
+
+```text
+1. Concept
+2. Syntax
+3. Important Methods
+4. Example
+5. Time Complexity
+6. Common Mistakes
+7. DSA Applications
+```

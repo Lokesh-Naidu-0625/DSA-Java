@@ -1,0 +1,989 @@
+Patterns and Algorithms
+
+This section contains the most important DSA problem-solving patterns and algorithms.
+
+The goal is to learn how to recognize the structure of a problem and select an appropriate approach.
+
+# 1. ARRAYS
+
+Arrays are probably the **most important DSA category for interviews**.
+
+### Core patterns
+
+```
+Arrays
+│
+├── Basic Traversal
+├── Sorting
+├── Two Pointers
+├── Sliding Window
+├── Prefix Sum
+├── Difference Array
+├── Hashing
+├── Kadane's Algorithm
+├── Binary Search
+├── Merge-based techniques
+└── Matrix
+```
+
+### Two Pointers
+
+Several patterns exist:
+
+```
+Two Pointers
+│
+├── Opposite Direction
+│   └── left ← → right
+│
+├── Same Direction
+│   └── slow → fast
+│
+├── Fast / Slow
+│
+└── Partitioning
+```
+
+Typical problems:
+
+```
+Two Sum II
+3Sum
+Container With Most Water
+Remove Duplicates
+Move Zeroes
+Sort Colors
+```
+
+---
+
+# 2. PREFIX SUM
+
+This deserves its own category because it appears everywhere.
+
+```
+Prefix Sum
+│
+├── Basic Prefix Sum
+│
+├── Range Sum
+│
+├── Prefix Sum + HashMap
+│   ├── Sum = K
+│   └── Count subarrays
+│
+├── Prefix Sum + HashSet
+│   └── Existence
+│
+├── Prefix Sum + Remainder
+│   └── Divisible by K
+│
+├── Prefix XOR
+│
+├── 2D Prefix Sum
+│
+└── Difference Array
+```
+
+### Important problems
+
+```
+Subarray Sum Equals K
+Continuous Subarray Sum
+Subarray Sums Divisible by K
+Range Sum Query
+Maximum Size Subarray Sum Equals K
+```
+
+---
+
+# 3. SLIDING WINDOW
+
+Another **major interview pattern**.
+
+```
+Sliding Window
+│
+├── Fixed Size Window
+│
+├── Variable Size Window
+│
+├── At Most K
+│
+├── Exactly K
+│   └── atMost(K) - atMost(K-1)
+│
+├── Character Frequency Window
+│
+├── Count-based Window
+│
+└── Minimum / Maximum Window
+```
+
+Examples:
+
+```
+Maximum Sum Subarray of Size K
+Longest Substring Without Repeating Characters
+Longest Repeating Character Replacement
+Minimum Window Substring
+Permutation in String
+Fruit Into Baskets
+```
+
+---
+
+# 4. HASHING
+
+```
+Hashing
+│
+├── HashSet
+│   ├── Existence
+│   ├── Duplicate Detection
+│   └── Membership
+│
+├── HashMap
+│   ├── Frequency
+│   ├── Index Mapping
+│   ├── Prefix Sum
+│   └── Grouping
+│
+├── Frequency Map
+│
+└── Custom Key
+```
+
+Examples:
+
+```
+Two Sum
+Group Anagrams
+Longest Consecutive Sequence
+Subarray Sum Equals K
+Top K Frequent Elements
+```
+
+---
+
+# 5. STRINGS
+
+Strings overlap heavily with arrays + hashing + sliding window.
+
+```
+Strings
+│
+├── Character Frequency
+├── Hashing
+├── Two Pointers
+├── Sliding Window
+├── Palindrome
+├── Anagram
+├── String Construction
+├── String Parsing
+├── Pattern Matching
+│   ├── KMP
+│   ├── Rabin-Karp
+│   └── Z Algorithm
+└── Trie
+```
+
+Important patterns:
+
+```
+Palindrome expansion
+Frequency counting
+Anagram matching
+Sliding window
+String hashing
+```
+
+---
+
+# 6. LINKED LIST
+
+```
+Linked List
+│
+├── Traversal
+├── Reversal
+├── Fast & Slow Pointer
+├── Cycle Detection
+├── Merge
+├── Intersection
+├── Dummy Node
+├── Recursive Manipulation
+└── Multiple Pointer Manipulation
+```
+
+### Extremely important patterns
+
+**Fast & Slow**
+
+```
+slow → 1 step
+fast → 2 steps
+```
+
+Used for:
+
+```
+Middle of Linked List
+Cycle Detection
+Cycle Start
+Palindrome Linked List
+```
+
+**Reversal**
+
+```
+prev
+curr
+next
+```
+
+Used for:
+
+```
+Reverse Linked List
+Reverse Between
+Reverse K Groups
+```
+
+---
+
+# 7. STACK
+
+```
+Stack
+│
+├── Basic Stack
+├── Monotonic Increasing Stack
+├── Monotonic Decreasing Stack
+├── Matching Parentheses
+├── Expression Evaluation
+└── Next Greater / Smaller
+```
+
+### Monotonic Stack is VERY important.
+
+Typical problems:
+
+```
+Next Greater Element
+Daily Temperatures
+Largest Rectangle in Histogram
+Stock Span
+Next Smaller Element
+```
+
+Mental trigger:
+
+> **"Next greater/smaller" → Think Monotonic Stack**
+> 
+
+---
+
+# 8. QUEUE / DEQUE
+
+```
+Queue
+│
+├── BFS
+├── Level Order
+├── Sliding Window Maximum
+├── Monotonic Queue
+└── Scheduling
+```
+
+Important:
+
+```
+Queue → BFS
+Deque → Sliding Window Maximum
+```
+
+---
+
+# 9. BINARY SEARCH
+
+This is much bigger than:
+
+> "Find an element in sorted array."
+> 
+
+```
+Binary Search
+│
+├── Basic Binary Search
+├── First / Last Occurrence
+├── Lower Bound
+├── Upper Bound
+├── Search Rotated Array
+├── Peak Finding
+├── Binary Search on Answer
+├── Minimum Feasible Value
+└── Maximum Feasible Value
+```
+
+### Binary Search on Answer ⭐
+
+Very important interview pattern.
+
+Instead of searching an array:
+
+```
+Search the answer space.
+```
+
+Examples:
+
+```
+Koko Eating Bananas
+Capacity To Ship Packages
+Split Array Largest Sum
+Aggressive Cows
+Minimum Days to Make Bouquets
+```
+
+Mental trigger:
+
+> **"Minimize the maximum" / "maximize the minimum" + feasibility check → Binary Search on Answer**
+> 
+
+---
+
+# 10. SORTING
+
+Know the concepts and complexities of:
+
+```
+Bubble Sort
+Selection Sort
+Insertion Sort
+
+Merge Sort
+Quick Sort
+Heap Sort
+
+Counting Sort
+Bucket Sort
+Radix Sort
+```
+
+For interviews, focus more on:
+
+```
+Merge Sort
+Quick Sort
+Heap Sort
+Counting Sort
+```
+
+And especially:
+
+### Sorting + another technique
+
+```
+Sorting + Two Pointer
+Sorting + Greedy
+Sorting + Binary Search
+Sorting + Hashing
+Sorting + Intervals
+```
+
+---
+
+# 11. INTERVALS
+
+This is an extremely recognizable pattern.
+
+```
+Intervals
+│
+├── Merge Intervals
+├── Insert Interval
+├── Overlapping Intervals
+├── Non-overlapping Intervals
+├── Meeting Rooms
+├── Meeting Rooms II
+├── Sweep Line
+└── Interval Scheduling
+```
+
+Usually:
+
+```
+Sort by starting point
+        ↓
+Process intervals
+```
+
+---
+
+# 12. RECURSION
+
+```
+Recursion
+│
+├── Basic Recursion
+├── Backtracking
+├── Divide & Conquer
+├── Tree Recursion
+└── Recursive DP
+```
+
+The most important thing:
+
+> Understand the **state → choice → base case → return**.
+> 
+
+---
+
+# 13. BACKTRACKING
+
+Huge interview pattern.
+
+```
+Backtracking
+│
+├── Subsets
+├── Subsequences
+├── Permutations
+├── Combination Sum
+├── Combination Generation
+├── Grid Backtracking
+├── N-Queens
+├── Sudoku
+└── Constraint Search
+```
+
+General structure:
+
+```
+choose
+   ↓
+explore
+   ↓
+unchoose
+```
+
+Template:
+
+```
+voidbacktrack(...) {if (baseCase) {return;
+    }for (...) {choose();backtrack(...);unchoose();
+    }
+}
+```
+
+---
+
+# 14. TREES
+
+Another huge category.
+
+```
+Trees
+│
+├── Binary Tree
+├── BST
+├── Traversals
+│   ├── Preorder
+│   ├── Inorder
+│   ├── Postorder
+│   └── Level Order
+│
+├── DFS
+├── BFS
+├── Height / Depth
+├── Diameter
+├── Lowest Common Ancestor
+├── Path Problems
+├── Serialize / Deserialize
+├── Tree Construction
+└── BST Operations
+```
+
+### Traversal patterns
+
+```
+DFS
+├── Recursive
+└── Iterative
+
+BFS
+└── Queue
+```
+
+### Tree thinking
+
+For many tree problems:
+
+```
+Solve left subtree
++
+Solve right subtree
++
+Combine
+```
+
+---
+
+# 15. BINARY SEARCH TREE
+
+```
+BST
+│
+├── Search
+├── Insert
+├── Delete
+├── Validate BST
+├── Kth Smallest
+├── LCA
+├── Range Queries
+└── Predecessor / Successor
+```
+
+Remember:
+
+> **Inorder traversal of a BST gives sorted order.**
+> 
+
+This single fact solves many questions.
+
+---
+
+# 16. HEAP / PRIORITY QUEUE
+
+```
+Heap
+│
+├── Min Heap
+├── Max Heap
+├── Top K
+├── Kth Largest / Smallest
+├── Two Heaps
+├── Merge K Sorted
+├── Scheduling
+└── Running Median
+```
+
+Mental triggers:
+
+```
+Top K
+Kth largest
+Kth smallest
+Repeatedly get min/max
+```
+
+→ **Heap**
+
+---
+
+# 17. GREEDY
+
+Greedy is not one data structure. It's a **problem-solving strategy**.
+
+```
+Greedy
+│
+├── Activity Selection
+├── Interval Scheduling
+├── Jump Game
+├── Gas Station
+├── Job Scheduling
+├── Fractional Knapsack
+├── Minimum Platforms
+└── Local Optimal Choice
+```
+
+The difficult part is proving:
+
+> Why does the local best choice lead to the global answer?
+> 
+
+---
+
+# 18. GRAPH
+
+Huge topic.
+
+```
+Graphs
+│
+├── Representation
+│   ├── Adjacency Matrix
+│   └── Adjacency List
+│
+├── BFS
+├── DFS
+├── Connected Components
+├── Cycle Detection
+├── Bipartite Graph
+├── Topological Sort
+├── Shortest Path
+├── Minimum Spanning Tree
+└── Union Find
+```
+
+---
+
+# 19. GRAPH — SHORTEST PATH
+
+```
+Shortest Path
+│
+├── BFS
+│   └── Unweighted Graph
+│
+├── Dijkstra
+│   └── Positive weights
+│
+├── Bellman-Ford
+│   └── Negative weights
+│
+├── Floyd-Warshall
+│   └── All pairs
+│
+└── 0-1 BFS
+    └── Edge weights 0/1
+```
+
+Very important decision tree:
+
+```
+Unweighted?
+    ↓
+   BFS
+
+Positive weights?
+    ↓
+ Dijkstra
+
+Negative weights?
+    ↓
+Bellman-Ford
+```
+
+---
+
+# 20. GRAPH — MST
+
+Minimum Spanning Tree:
+
+```
+MST
+│
+├── Kruskal
+│   └── Union Find
+│
+└── Prim
+    └── Priority Queue
+```
+
+---
+
+# 21. UNION FIND / DSU
+
+```
+Disjoint Set Union
+│
+├── Find
+├── Union
+├── Path Compression
+└── Union by Rank / Size
+```
+
+Used for:
+
+```
+Connected Components
+Cycle Detection
+Kruskal
+Dynamic Connectivity
+Number of Islands variations
+```
+
+---
+
+# 22. TOPOLOGICAL SORT
+
+For directed acyclic graphs:
+
+```
+Topological Sort
+│
+├── Kahn's Algorithm
+│   └── BFS + Indegree
+│
+└── DFS
+```
+
+Typical problems:
+
+```
+Course Schedule
+Course Schedule II
+Dependency resolution
+Build systems
+Task ordering
+```
+
+Mental trigger:
+
+> **Prerequisites / dependencies / ordering → Topological Sort**
+> 
+
+---
+
+# 23. DYNAMIC PROGRAMMING
+
+This is probably the **largest and most difficult category**.
+
+Don't learn DP as hundreds of unrelated problems.
+
+Learn the patterns.
+
+```
+Dynamic Programming
+│
+├── 1D DP
+├── 2D DP
+├── Knapsack
+├── Subsequence DP
+├── Grid DP
+├── String DP
+├── Interval DP
+├── Partition DP
+├── State Machine DP
+├── Tree DP
+├── Bitmask DP
+└── Digit DP
+```
+
+---
+
+## 1D DP
+
+```
+Climbing Stairs
+House Robber
+Decode Ways
+Fibonacci variations
+```
+
+---
+
+## Knapsack
+
+```
+0/1 Knapsack
+Unbounded Knapsack
+Subset Sum
+Partition Equal Subset Sum
+Coin Change
+Target Sum
+```
+
+---
+
+## Subsequence DP
+
+```
+LIS
+LCS
+Longest Palindromic Subsequence
+Edit Distance
+```
+
+---
+
+## Grid DP
+
+```
+Unique Paths
+Minimum Path Sum
+Grid with Obstacles
+Triangle
+```
+
+---
+
+## String DP
+
+```
+Edit Distance
+Word Break
+Palindrome Partitioning
+Wildcard Matching
+Regular Expression Matching
+```
+
+---
+
+# 24. BIT MANIPULATION
+
+```
+Bit Manipulation
+│
+├── AND
+├── OR
+├── XOR
+├── NOT
+├── Left Shift
+├── Right Shift
+├── Set Bit
+├── Clear Bit
+├── Toggle Bit
+├── Check Bit
+├── Count Bits
+└── XOR Patterns
+```
+
+Important patterns:
+
+```
+XOR → find unique element
+XOR → missing number
+Bitmask → subsets
+Bitmask → state representation
+```
+
+---
+
+# 25. TRIE
+
+```
+Trie
+│
+├── Insert
+├── Search
+├── Prefix Search
+├── Starts With
+├── Word Dictionary
+└── Bitwise Trie
+```
+
+Typical:
+
+```
+Implement Trie
+Word Search
+Autocomplete
+Maximum XOR
+```
+
+---
+
+# 26. ADVANCED DATA STRUCTURES
+
+For stronger SDE interviews:
+
+```
+Advanced DS
+│
+├── Trie
+├── Union Find
+├── Segment Tree
+├── Fenwick Tree
+├── Sparse Table
+├── Ordered Set / Tree
+└── LRU Cache
+```
+
+### Segment Tree
+
+Useful for:
+
+```
+Range Sum
+Range Minimum
+Range Maximum
+Range Updates
+```
+
+### Fenwick Tree
+
+Useful for:
+
+```
+Prefix queries
+Frequency queries
+Dynamic cumulative values
+```
+
+You don't need to start here.
+
+---
+
+# 27. DIVIDE AND CONQUER
+
+```
+Divide & Conquer
+│
+├── Merge Sort
+├── Quick Sort
+├── Binary Search
+├── Closest Pair
+└── Recursive Partitioning
+```
+
+Basic idea:
+
+```
+Divide
+  ↓
+Solve smaller problems
+  ↓
+Combine
+```
+
+---
+
+# 28. IMPORTANT CROSS-PATTERNS
+
+This is where your DSA preparation becomes **interview-level**.
+
+Many questions aren't simply:
+
+```
+"Use HashMap."
+```
+
+They are combinations.
+
+Learn these combinations:
+
+Array + HashMap
+Array + Sorting
+Array + Two Pointer
+Array + Binary Search
+Array + Prefix Sum
+Array + Sliding Window
+
+String + HashMap
+String + Sliding Window
+String + Two Pointer
+String + Stack
+
+Tree + DFS
+Tree + BFS
+Tree + HashMap
+Tree + DP
+
+Graph + BFS
+Graph + DFS
+Graph + Heap
+Graph + Union Find
+Graph + Topological Sort
+
+Heap + HashMap
+Heap + Sliding Window
+
+Binary Search + Greedy
+Binary Search + BFS
+Binary Search + DP
+
+
