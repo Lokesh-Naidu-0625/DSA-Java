@@ -3,6 +3,7 @@ package Main.Core_Java;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class AList {
     public static void main(String[] args) {
@@ -100,5 +101,8 @@ public class AList {
         matrix.get(1).add(40);
 
         System.out.println(matrix);
+
+
+
     }
 }
