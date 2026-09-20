@@ -1,6 +1,7 @@
 package Main.Core_Java;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Hash_set {
     public static void main(String[] args) {
@@ -45,11 +46,75 @@ public class Hash_set {
 
 //        size() functions gives us the size of the set
         System.out.println(set.size());
+//      if you keep adding duplicates dont think size will increas it will be the same
 
 
+//        isEmpty() reutrns a boolean
+        System.out.println(set.isEmpty());
+
+//        clear() removes everything
+//        System.out.println(set.clear());
+
+//        iterator() which is not important to learn
+//        better to know
+
+        Iterator<Integer> iterator = set.iterator();
+
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
 
 
+//        foreachloop which we usually do
+
+        for(int num:set)
+            System.out.println(num);
+
+        System.out.println(set);
+
+//      toarray()
+        Object[] arr = set.toArray();
+//        or
+        Integer[] nums = set.toArray(new Integer[0]);
+//        not that important but better you should know
 
 
+//        containsAll()
+//        check whether this set contains all the elements of another set
+        HashSet<Integer> set2 = new HashSet<>();
+        set2.add(20);
+        set2.add(40);
+        set2.add(10);
+
+        System.out.println(set.containsAll(set2));
+
+        set2.add(30);
+        System.out.println(set.containsAll(set2));
+
+//        addAll()
+//        add all elements from another collection
+        set.addAll(set2);
+        System.out.println(set);
+
+//        removeAll()
+//        remove all elements from another collection
+//        set.removeAll(set2);
+
+//        retainAll()
+//        it keeps only the elements which are common in both
+        HashSet<Integer> set3 = new HashSet<>();
+
+        set3.add(20);
+        set3.add(40);
+        set3.add(10);
+        System.out.println(set2);
+        set2.retainAll(set3);
+        System.out.println(set2);
+
+//        equals()
+//        containsAll() asks: "Does A contain everything that B has?"
+//        equals() asks: "Are A and B exactly the same set?"
+//        order of elements doesnt matter
+        System.out.println(set2.equals(set3));
     }
 }
